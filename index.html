@@ -2,183 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shourya — AI / LLM Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SHOURYA.EXE — AI SYSTEMS</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Retro + Tech Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Retro Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
-  <meta name="theme-color" content="#0b0b0f">
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 </head>
 
 <body>
-  <div class="bg">
-    <canvas id="bg-canvas"></canvas>
-    <div class="scanlines"></div>
-  </div>
+  <div class="crt"></div>
 
-  <main class="wrap">
+  <main class="terminal">
 
-    <!-- NAV -->
-    <nav class="nav retro-nav">
-      <div class="brand">▶ SHOURYA.exe</div>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Levels</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-
-    <!-- HERO -->
-    <header class="hero retro-hero">
-      <div class="intro">
-        <h1>
-          SHOURYA<br>
-          <span class="muted">AI • ML • LLM SYSTEMS</span>
-        </h1>
-
-        <p class="bio">
-          Final-year B.Tech CSE (AI & ML) student building
-          transformer-based LLMs, intelligent agents, and deep learning systems.
-        </p>
-
-        <div class="actions">
-          <a class="btn primary" href="#projects">START GAME</a>
-          <a class="btn ghost" href="#contact">CONTACT</a>
-        </div>
-      </div>
-
-      <div class="hero-card retro-card">
-        <div class="stat">
-          <strong>LEVEL</strong>
-          <span>Final Year</span>
-        </div>
-        <div class="stat">
-          <strong>SPECIAL</strong>
-          <span>LLMs from Scratch</span>
-        </div>
-        <div class="stat">
-          <strong>EVENT</strong>
-          <span>NASA Space Apps 2024</span>
-        </div>
-      </div>
+    <!-- HEADER -->
+    <header class="hud">
+      <span>PLAYER: SHOURYA</span>
+      <span>CLASS: AI / LLM ENGINEER</span>
+      <span>STATUS: ACTIVE</span>
     </header>
 
+    <!-- HERO -->
+    <section class="screen">
+      <h1 class="title">SHOURYA.EXE</h1>
+      <p class="subtitle">Building LLMs • Intelligent Agents • ML Systems</p>
+      <p class="prompt">> PRESS ENTER TO START</p>
+    </section>
+
     <!-- ABOUT -->
-    <section id="about" class="section card reveal">
+    <section id="about" class="panel">
       <h2>PLAYER PROFILE</h2>
       <p>
-        Computer Science & Engineering student at Dayananda Sagar University, Bangalore,
-        specializing in Artificial Intelligence and Machine Learning.
+        Final-year B.Tech CSE (AI & ML) student at Dayananda Sagar University, Bangalore.
+        I build transformer-based LLMs, deep learning systems, and production-grade AI tools.
       </p>
       <p>
-        Focused on building scalable AI systems — from transformer internals
-        and RAG pipelines to production-ready ML applications.
+        Strong foundations in DSA, OOP, and software engineering with hands-on experience
+        using PyTorch, TensorFlow, LangChain, and RAG pipelines.
       </p>
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" class="section card reveal">
-      <h2>GAME LEVELS</h2>
+    <section id="projects" class="panel">
+      <h2>MISSION LOG</h2>
 
-      <div class="projects">
+      <div class="mission">
+        <h3>MISSION 01 — LLM FROM SCRATCH</h3>
+        <p>
+          Implemented a transformer-based LLM end-to-end including BPE tokenization,
+          positional encodings, causal self-attention, GELU layers,
+          and custom training loops.
+        </p>
+        <span class="tech">Python • PyTorch • NumPy</span>
+      </div>
 
-        <article class="project retro-project">
-          <h3>LEVEL 1 — Large Language Model from Scratch</h3>
-          <p>
-            Implemented a transformer-based LLM end-to-end including BPE tokenization,
-            positional encodings, causal self-attention, GELU layers,
-            and custom training loops.
-          </p>
-          <p class="muted">Python • PyTorch • NumPy</p>
-        </article>
+      <div class="mission">
+        <h3>MISSION 02 — LLM AGENT + RAG</h3>
+        <p>
+          Built an intelligent ReAct agent using LangChain with FAISS-backed
+          Retrieval-Augmented Generation for grounded reasoning.
+        </p>
+        <span class="tech">Python • LangChain • FAISS</span>
+      </div>
 
-        <article class="project retro-project">
-          <h3>LEVEL 2 — LLM Agent with RAG</h3>
-          <p>
-            Built an intelligent agent using LangChain’s ReAct framework
-            with FAISS-backed Retrieval-Augmented Generation for grounded reasoning.
-          </p>
-          <p class="muted">Python • LangChain • HuggingFace • FAISS</p>
-        </article>
+      <div class="mission">
+        <h3>MISSION 03 — STOCK FORECASTING (LSTM)</h3>
+        <p>
+          Designed stacked LSTM architectures to model temporal dependencies
+          in financial time-series data.
+        </p>
+        <span class="tech">TensorFlow • Keras • Pandas</span>
+      </div>
 
-        <article class="project retro-project">
-          <h3>LEVEL 3 — Stock Price Forecasting (Stacked LSTM)</h3>
-          <p>
-            Designed and trained stacked LSTM architectures to model
-            temporal dependencies in financial time-series data.
-          </p>
-          <p class="muted">Python • TensorFlow/Keras • Pandas</p>
-        </article>
-
-        <article class="project retro-project">
-          <h3>BONUS — QA Chatbot</h3>
-          <p>
-            Developed a conversational AI chatbot using OpenAI API
-            with Streamlit frontend and secure environment-based key handling.
-          </p>
-          <p class="muted">Python • Streamlit • OpenAI API</p>
-        </article>
-
+      <div class="mission">
+        <h3>BONUS — QA CHATBOT</h3>
+        <p>
+          Developed a conversational chatbot using OpenAI API with Streamlit frontend
+          and secure environment variable handling.
+        </p>
+        <span class="tech">Python • Streamlit • OpenAI</span>
       </div>
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section card reveal">
-      <h2>ABILITY SET</h2>
-
-      <div class="grid">
-        <div>
-          <h4>Languages</h4>
-          <p>Python, C++, C, Java</p>
-        </div>
-
-        <div>
-          <h4>AI / ML</h4>
-          <p>Machine Learning, Deep Learning, Feature Engineering</p>
-        </div>
-
-        <div>
-          <h4>LLMs & GenAI</h4>
-          <p>Transformers, RAG, LangChain, LangGraph, Fine-Tuning</p>
-        </div>
-
-        <div>
-          <h4>Frameworks</h4>
-          <p>PyTorch, TensorFlow, Scikit-learn</p>
-        </div>
-
-        <div>
-          <h4>Core CS</h4>
-          <p>Data Structures & Algorithms, OOP</p>
-        </div>
-      </div>
+    <section id="skills" class="panel">
+      <h2>ABILITY MATRIX</h2>
+      <ul class="skills">
+        <li>PYTHON</li>
+        <li>C++</li>
+        <li>JAVA</li>
+        <li>TRANSFORMERS</li>
+        <li>RAG</li>
+        <li>LANGCHAIN</li>
+        <li>PYTORCH</li>
+        <li>TENSORFLOW</li>
+        <li>DSA</li>
+        <li>OOP</li>
+      </ul>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section card reveal">
-      <h2>CONNECT</h2>
-      <p>
-        Email:
-        <a href="mailto:imailshourya@gmail.com">imailshourya@gmail.com</a>
-        • Phone: +91-9353899692
-      </p>
+    <section id="contact" class="panel">
+      <h2>COMM LINK</h2>
+      <p>> EMAIL: imailshourya@gmail.com</p>
+      <p>> PHONE: +91-9353899692</p>
 
-      <div class="socials">
-        <a class="social" href="https://github.com/shourya5204" target="_blank">GitHub</a>
-        <a class="social" href="https://www.linkedin.com/in/shourya-pratap-singh-chouhan-a1bb16250/" target="_blank">LinkedIn</a>
-        <a class="social" href="https://leetcode.com/u/shouryapratapsingh/" target="_blank">LeetCode</a>
+      <div class="links">
+        <a href="https://github.com/shourya5204" target="_blank">GITHUB</a>
+        <a href="https://www.linkedin.com/in/shourya-pratap-singh-chouhan-a1bb16250/" target="_blank">LINKEDIN</a>
+        <a href="https://leetcode.com/u/shouryapratapsingh/" target="_blank">LEETCODE</a>
       </div>
     </section>
 
     <footer class="footer">
-      <p>© SHOURYA.exe — 2025 <span class="muted">Press START to continue</span></p>
+      <p>© 2025 SHOURYA.EXE — ALL SYSTEMS NOMINAL</p>
     </footer>
 
   </main>
