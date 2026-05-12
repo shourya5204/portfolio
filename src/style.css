@@ -28,6 +28,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -317,13 +319,15 @@ header.scrolled {
 .about-links {
   display: flex;
   gap: 24px;
+  margin-top: 12px;
 }
 
 .about-links a {
-  font-size: 0.82rem;
+  font-size: 0.95rem; /* Larger for mobile touch */
   color: var(--blue);
   font-weight: 400;
   transition: opacity 0.2s;
+  padding: 8px 0; /* Vertical touch padding */
 }
 
 .about-links a:hover {
@@ -605,4 +609,19 @@ footer {
   }
 
   footer { padding: 24px; }
+
+  /* Chat adjustments for mobile */
+  #chat-widget {
+    bottom: 16px;
+    right: 16px;
+  }
+  
+  #chat-panel {
+    width: calc(100vw - 32px);
+    max-width: 320px;
+    height: 400px;
+  }
+  
+  h1 { font-size: 2.2rem; }
+  .hero-sub { font-size: 0.95rem; }
 }
